@@ -1,0 +1,23 @@
+minkube start --driver=hyperv
+
+kubectl create deployment "deployment-name" --image="image to use"
+
+minikube dashboard
+
+minikube service "service_name"
+
+kubectl expose deployment first-app --type=LoadBalancer  --port=8080
+
+kubectl remove -f="name of yaml.file ocnfiguration
+
+
+--------------------------
+
+Docker:
+
+docker run --name postgres-container -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=post -e POSTGRES_DB=test -p 5432:5432 -d ankane/pgvector
+
+docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=your_root_password -e MYSQL_DATABASE=rental -e MYSQL_USER=user -e MYSQL_PASSWORD=password --rm -p 3306:3306 -d mysql:8.0
+
+
+docker system prune -a --volumes -f (Remove all images, container, volumes)
